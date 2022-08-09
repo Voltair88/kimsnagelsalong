@@ -1,11 +1,10 @@
 import './App.css';
-import { Container } from './styles';
+import {  SubmittButton } from './styles';
 function App() {
   return (
     <div className='App'>
-      <Container>
         <h1>Hello World</h1>
-      </Container>
+        <SubmittButton $primary={true}>Primary</SubmittButton>
     </div>
   );
 }
