@@ -1,6 +1,9 @@
 {
   "name": "kimsnagelsalong",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "version": "0.1.0",
+  "author": "Mattias Gulec",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@svgr/webpack": "^6.3.1",
@@ -28,10 +31,7 @@
     "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
     "lint:fix": "eslint src/**/*.{js,jsx,ts,tsx} --fix",
     "prettier": "prettier --write src/**/*.{js,jsx,ts,tsx}",
-    "prettier:check": "prettier --check src/**/*.{js,jsx,ts,tsx}",
-    "prettier:fix": "prettier --write src/**/*.{js,jsx,ts,tsx}",
-    "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch"
+    "prettier:check": "prettier --check src/**/*.{js,jsx,ts,tsx}"
   },
   "eslintConfig": {
     "extends": [
@@ -63,5 +63,11 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "2.7.1",
     "prettier-eslint": "^15.0.1"
+  },
+  "repository": {
+    "url": "https://github.com/Voltair88/kimsnagelsalong"
+  },
+  "bugs": {
+    "url": "https://github.com/Voltair88/kimsnagelsalong/issues"
   }
 }
