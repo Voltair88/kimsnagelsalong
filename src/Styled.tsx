@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   font-family: 'Roboto', sans-serif;
   background-color: #fff;
   min-height: 100vh;
@@ -12,7 +13,7 @@ export const Container = styled.div`
   color: #1a1a1a;
 `;
 
-export const SubmittButton = styled.button`
+export const SubmittButton = styled(motion.button)`
   background: ${(p: { $primary: any }) => (p.$primary ? 'indigo' : 'red')};
   color: white;
   border: none;
