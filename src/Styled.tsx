@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import { motion } from 'framer-motion';
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -106,6 +105,28 @@ export const Nav = styled.nav`
     background-color: #fff;
     color: #333;
   }
+  .Logo > a {
+    width: 65px;
+    height: 65px;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    :hover {
+      background: none;
+    }
+  }
+  .Logo-img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .Logo-img:hover {
+    filter: invert(10%);
+  }
   @media (min-width: 1000px) {
     .navlinks {
       display: flex;
@@ -119,7 +140,6 @@ export const Nav = styled.nav`
       display: none;
     }
   }
-
   @media (max-width: 1000px) {
     .navlinks {
       display: none;
@@ -141,32 +161,6 @@ export const Nav = styled.nav`
       position: absolute;
       background: #333;
     }
-  }
-
-  .Logo > a {
-    width: 65px;
-    height: 65px;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin-top: 10px;
-    margin-left: 10px;
-    position: absolute;
-    :hover {
-      background: none;
-    }
-  }
-  .Logo-img {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    filter: invert(100%);
-    transition: all 0.3s ease-in-out;
-  }
-  .Logo-img:hover {
-    filter: invert(70%);
-  }
-  @media (max-width: 1000px) {
     .Logo-img {
       width: 70%;
       height: auto;
